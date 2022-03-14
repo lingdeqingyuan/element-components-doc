@@ -1,0 +1,1 @@
+import{_ as e,c as i,o as t,a as l}from"./app.375d6ddf.js";const f='{"title":"\u4ECB\u7ECD","description":"","frontmatter":{},"headers":[{"level":2,"title":"\u4ECB\u7ECD","slug":"\u4ECB\u7ECD"}],"relativePath":"intro/index.md"}',a={},_=l("",4),r=[_];function n(o,s,c,d,p,h){return t(),i("div",null,r)}var m=e(a,[["render",n]]);export{f as __pageData,m as default};
