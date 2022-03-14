@@ -1,19 +1,147 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>表格 | 基于ElementPlus二次封装业务组件</title>
-    <meta name="description" content="A VitePress site">
-    <link rel="stylesheet" href="/assets/style.c3210e46.css">
-    <link rel="modulepreload" href="/assets/app.375d6ddf.js">
-    <link rel="modulepreload" href="/assets/table_index.md.2284c983.lean.js">
-    
-    <meta name="twitter:title" content="表格 | 基于ElementPlus二次封装业务组件">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>表格 | 基于ElementPlus二次封装业务组件</title>
+  <meta name="description" content="A VitePress site">
+  <link rel="stylesheet" href="https://lingdeqingyuan.github.io/element-components-doc/assets/style.c3210e46.css">
+  <link rel="modulepreload" href="https://lingdeqingyuan.github.io/element-components-doc/assets/app.375d6ddf.js">
+  <link rel="modulepreload"
+    href="https://lingdeqingyuan.github.io/element-components-doc/assets/table_index.md.2284c983.lean.js">
+
+  <meta name="twitter:title" content="表格 | 基于ElementPlus二次封装业务组件">
   <meta property="og:title" content="表格 | 基于ElementPlus二次封装业务组件">
-  </head>
-  <body>
-    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="基于ElementPlus二次封装业务组件, back to home" data-v-675d8756 data-v-cc01ef16><!----> 基于ElementPlus二次封装业务组件</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><nav class="nav-links" data-v-675d8756 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item isExternal" href="https://lingdeqingyuan.github.io/element-components/#/" target="_blank" rel="noopener noreferrer" data-v-b8818f8c>组件示例 <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-b8818f8c><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页 <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item isExternal" href="https://lingdeqingyuan.github.io/element-components/#/" target="_blank" rel="noopener noreferrer" data-v-b8818f8c>组件示例 <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-b8818f8c><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/intro/">介绍</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/quickStart/">快速上手</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseIcon/">图标选择器</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseArea/">省市区选择</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/trend/">趋势标记</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseTime/">时间选择</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseCity/">城市选择</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/progress/">进度条</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/form/">表单</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/modalForm/">弹出框表单</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/table/">表格</a><!----></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h2 id="表格" tabindex="-1">表格 <a class="header-anchor" href="#表格" aria-hidden="true">#</a></h2><p>可配置型表格，支持自定义</p><h3 id="基本用法" tabindex="-1">基本用法 <a class="header-anchor" href="#基本用法" aria-hidden="true">#</a></h3><p>示例见 <a href="https://lingdeqingyuan.github.io/element-components/#/table" target="_blank" rel="noopener noreferrer">https://lingdeqingyuan.github.io/element-components/#/table</a></p><h3 id="代码示例" tabindex="-1">代码示例 <a class="header-anchor" href="#代码示例" aria-hidden="true">#</a></h3><div class="language-html"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>z-table</span>
+</head>
+
+<body>
+  <div id="app">
+    <!--[-->
+    <div class="theme">
+      <header class="nav-bar" data-v-675d8756>
+        <div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" role="img" viewBox="0 0 448 512">
+            <path fill="currentColor"
+              d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+              class></path>
+          </svg></div><a class="nav-bar-title" href="/" aria-label="基于ElementPlus二次封装业务组件, back to home" data-v-675d8756
+          data-v-cc01ef16>
+          <!----> 基于ElementPlus二次封装业务组件
+        </a>
+        <div class="flex-grow" data-v-675d8756></div>
+        <div class="nav" data-v-675d8756>
+          <nav class="nav-links" data-v-675d8756 data-v-eab3edfe>
+            <!--[-->
+            <div class="item" data-v-eab3edfe>
+              <div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页
+                  <!---->
+                </a></div>
+            </div>
+            <div class="item" data-v-eab3edfe>
+              <div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item isExternal"
+                  href="https://lingdeqingyuan.github.io/element-components/#/" target="_blank"
+                  rel="noopener noreferrer" data-v-b8818f8c>组件示例 <svg class="icon outbound"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100"
+                    width="15" height="15" data-v-b8818f8c>
+                    <path fill="currentColor"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                    </path>
+                    <polygon fill="currentColor"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                    </polygon>
+                  </svg></a></div>
+            </div>
+            <!--]-->
+            <!---->
+            <!---->
+          </nav>
+        </div>
+        <!--[-->
+        <!--]-->
+      </header>
+      <aside class="sidebar" data-v-83e92a68>
+        <nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe>
+          <!--[-->
+          <div class="item" data-v-eab3edfe>
+            <div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>首页
+                <!---->
+              </a></div>
+          </div>
+          <div class="item" data-v-eab3edfe>
+            <div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item isExternal"
+                href="https://lingdeqingyuan.github.io/element-components/#/" target="_blank" rel="noopener noreferrer"
+                data-v-b8818f8c>组件示例 <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                  x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-b8818f8c>
+                  <path fill="currentColor"
+                    d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                  </path>
+                  <polygon fill="currentColor"
+                    points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                  </polygon>
+                </svg></a></div>
+          </div>
+          <!--]-->
+          <!---->
+          <!---->
+        </nav>
+        <!--[-->
+        <!--]-->
+        <ul class="sidebar-links" data-v-83e92a68>
+          <!--[-->
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/intro/">介绍</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/quickStart/">快速上手</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseIcon/">图标选择器</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseArea/">省市区选择</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/trend/">趋势标记</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseTime/">时间选择</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/chooseCity/">城市选择</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/progress/">进度条</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/form/">表单</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/modalForm/">弹出框表单</a>
+            <!---->
+          </li>
+          <li class="sidebar-link"><a class="sidebar-link-item" href="/element-components-doc/table/">表格</a>
+            <!---->
+          </li>
+          <!--]-->
+        </ul>
+        <!--[-->
+        <!--]-->
+      </aside>
+      <div class="sidebar-mask"></div>
+      <main class="page" data-v-7eddb2c4>
+        <div class="container" data-v-7eddb2c4>
+          <!--[-->
+          <!--]-->
+          <div style="position:relative;" class="content" data-v-7eddb2c4>
+            <div>
+              <h2 id="表格" tabindex="-1">表格 <a class="header-anchor" href="#表格" aria-hidden="true">#</a></h2>
+              <p>可配置型表格，支持自定义</p>
+              <h3 id="基本用法" tabindex="-1">基本用法 <a class="header-anchor" href="#基本用法" aria-hidden="true">#</a></h3>
+              <p>示例见 <a href="https://lingdeqingyuan.github.io/element-components/#/table" target="_blank"
+                  rel="noopener noreferrer">https://lingdeqingyuan.github.io/element-components/#/table</a></p>
+              <h3 id="代码示例" tabindex="-1">代码示例 <a class="header-anchor" href="#代码示例" aria-hidden="true">#</a></h3>
+              <div class="language-html">
+                <pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>z-table</span>
   <span class="token attr-name">:tableData</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>data<span class="token punctuation">&quot;</span></span>
   <span class="token attr-name">:tableOption</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>options<span class="token punctuation">&quot;</span></span>
   <span class="token attr-name">:currentPage</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>currentPage<span class="token punctuation">&quot;</span></span>
@@ -65,9 +193,257 @@
     <span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>z-table</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div><h3 id="api" tabindex="-1">Api <a class="header-anchor" href="#api" aria-hidden="true">#</a></h3><br><h4 id="props" tabindex="-1">Props <a class="header-anchor" href="#props" aria-hidden="true">#</a></h4><table><thead><tr><th style="text-align:left;">属性</th><th>说明</th><th>类型</th><th>可选值</th><th>默认值</th></tr></thead><tbody><tr><td style="text-align:left;">tableOption</td><td>表格配置项</td><td>TableOption[]</td><td>必填</td><td>-</td></tr><tr><td style="text-align:left;">tableData</td><td>表格数据</td><td>any[]</td><td>必填</td><td>-</td></tr><tr><td style="text-align:left;">elementLoadingText</td><td>加载文案</td><td>string</td><td>-</td><td>-</td></tr><tr><td style="text-align:left;">elementLoadingBackground</td><td>加载背景颜色</td><td>string</td><td>-</td><td>-</td></tr><tr><td style="text-align:left;">elementLoadingSpinner</td><td>加载图标名</td><td>string</td><td>-</td><td>-</td></tr><tr><td style="text-align:left;">elementLoadingSvg</td><td>加载图标 svg</td><td>string</td><td>-</td><td>-</td></tr><tr><td style="text-align:left;">elementLoadingSvgViewBox</td><td>加载图标 svg 的配置</td><td>string</td><td>-</td><td>-</td></tr><tr><td style="text-align:left;">editIcon</td><td>编辑显示的图标</td><td>string</td><td>-</td><td>&#39;Edit&#39;</td></tr><tr><td style="text-align:left;">isEditRow</td><td>是否可以编辑行</td><td>boolean</td><td>true / false</td><td>false</td></tr><tr><td style="text-align:left;">pagination</td><td>是否显示分页</td><td>boolean</td><td>true / false</td><td>false</td></tr><tr><td style="text-align:left;">paginationAlign</td><td>分页对齐方式</td><td>string</td><td><code>left</code> / <code>right</code> / <code>center</code></td><td><code>left</code></td></tr><tr><td style="text-align:left;">currentPage</td><td>当前是第几页</td><td>number</td><td>-</td><td>1</td></tr><tr><td style="text-align:left;">pageSize</td><td>一页多少数据</td><td>number</td><td>-</td><td>10</td></tr><tr><td style="text-align:left;">pageSizes</td><td>一页可选择的数据条数</td><td>number[]</td><td>-</td><td>[10, 20, 30, 40]</td></tr><tr><td style="text-align:left;">total</td><td>数据总数</td><td>number</td><td>-</td><td>-</td></tr></tbody></table><h4 id="tableoption-数据格式" tabindex="-1">TableOption 数据格式 <a class="header-anchor" href="#tableoption-数据格式" aria-hidden="true">#</a></h4><table><thead><tr><th style="text-align:left;">key</th><th>说明</th><th>类型</th></tr></thead><tbody><tr><td style="text-align:left;">prop</td><td>字段名</td><td>string</td></tr><tr><td style="text-align:left;">label</td><td>表头</td><td>string</td></tr><tr><td style="text-align:left;">width</td><td>列宽</td><td>string / number</td></tr><tr><td style="text-align:left;">align</td><td>对齐方式</td><td>string</td></tr><tr><td style="text-align:left;">slot</td><td>自定义列模板的插槽名</td><td>string</td></tr><tr><td style="text-align:left;">action</td><td>是否是编辑选项</td><td>boolean</td></tr><tr><td style="text-align:left;">editable</td><td>单元格是否可编辑</td><td>boolean</td></tr></tbody></table><h4 id="事件" tabindex="-1">事件 <a class="header-anchor" href="#事件" aria-hidden="true">#</a></h4><table><thead><tr><th style="text-align:left;">事件名</th><th>说明</th><th>参数</th></tr></thead><tbody><tr><td style="text-align:left;">confirm</td><td>可编辑单元格确认事件</td><td>scope: 当前行数据</td></tr><tr><td style="text-align:left;">cancel</td><td>可编辑单元格确认事件</td><td>scope: 当前行数据</td></tr><tr><td style="text-align:left;">size-change</td><td>当前页数据条数改变事件</td><td>val: 当前页条数</td></tr><tr><td style="text-align:left;">current-change</td><td>当前页改变事件</td><td>val: 当前页条数</td></tr></tbody></table><h4 id="slots-插槽" tabindex="-1">slots 插槽 <a class="header-anchor" href="#slots-插槽" aria-hidden="true">#</a></h4><table><thead><tr><th style="text-align:left;">名称</th><th>说明</th></tr></thead><tbody><tr><td style="text-align:left;">cellEdit</td><td>自定义可编辑单元格内容</td></tr><tr><td style="text-align:left;">editRow</td><td>自定义可编辑行按钮内容</td></tr><tr><td style="text-align:left;">action</td><td>自定义编辑区域内容</td></tr></tbody></table></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"choosearea_index.md\":\"b9a08a14\",\"choosecity_index.md\":\"fd5e00f3\",\"chooseicon_index.md\":\"fab9b528\",\"choosetime_index.md\":\"f4b0053e\",\"form_index.md\":\"a6dd7a95\",\"index.md\":\"a4de55d7\",\"intro_index.md\":\"48dd2908\",\"modalform_index.md\":\"b5abf114\",\"progress_index.md\":\"04d5e51a\",\"quickstart_index.md\":\"0a223674\",\"table_index.md\":\"2284c983\",\"trend_index.md\":\"7ae44cb8\"}")</script>
-    <script type="module" async src="/assets/app.375d6ddf.js"></script>
-    
-  </body>
+</code></pre>
+              </div>
+              <h3 id="api" tabindex="-1">Api <a class="header-anchor" href="#api" aria-hidden="true">#</a></h3><br>
+              <h4 id="props" tabindex="-1">Props <a class="header-anchor" href="#props" aria-hidden="true">#</a></h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align:left;">属性</th>
+                    <th>说明</th>
+                    <th>类型</th>
+                    <th>可选值</th>
+                    <th>默认值</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left;">tableOption</td>
+                    <td>表格配置项</td>
+                    <td>TableOption[]</td>
+                    <td>必填</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">tableData</td>
+                    <td>表格数据</td>
+                    <td>any[]</td>
+                    <td>必填</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">elementLoadingText</td>
+                    <td>加载文案</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">elementLoadingBackground</td>
+                    <td>加载背景颜色</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">elementLoadingSpinner</td>
+                    <td>加载图标名</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">elementLoadingSvg</td>
+                    <td>加载图标 svg</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">elementLoadingSvgViewBox</td>
+                    <td>加载图标 svg 的配置</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">editIcon</td>
+                    <td>编辑显示的图标</td>
+                    <td>string</td>
+                    <td>-</td>
+                    <td>&#39;Edit&#39;</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">isEditRow</td>
+                    <td>是否可以编辑行</td>
+                    <td>boolean</td>
+                    <td>true / false</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">pagination</td>
+                    <td>是否显示分页</td>
+                    <td>boolean</td>
+                    <td>true / false</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">paginationAlign</td>
+                    <td>分页对齐方式</td>
+                    <td>string</td>
+                    <td><code>left</code> / <code>right</code> / <code>center</code></td>
+                    <td><code>left</code></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">currentPage</td>
+                    <td>当前是第几页</td>
+                    <td>number</td>
+                    <td>-</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">pageSize</td>
+                    <td>一页多少数据</td>
+                    <td>number</td>
+                    <td>-</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">pageSizes</td>
+                    <td>一页可选择的数据条数</td>
+                    <td>number[]</td>
+                    <td>-</td>
+                    <td>[10, 20, 30, 40]</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">total</td>
+                    <td>数据总数</td>
+                    <td>number</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="tableoption-数据格式" tabindex="-1">TableOption 数据格式 <a class="header-anchor" href="#tableoption-数据格式"
+                  aria-hidden="true">#</a></h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align:left;">key</th>
+                    <th>说明</th>
+                    <th>类型</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left;">prop</td>
+                    <td>字段名</td>
+                    <td>string</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">label</td>
+                    <td>表头</td>
+                    <td>string</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">width</td>
+                    <td>列宽</td>
+                    <td>string / number</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">align</td>
+                    <td>对齐方式</td>
+                    <td>string</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">slot</td>
+                    <td>自定义列模板的插槽名</td>
+                    <td>string</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">action</td>
+                    <td>是否是编辑选项</td>
+                    <td>boolean</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">editable</td>
+                    <td>单元格是否可编辑</td>
+                    <td>boolean</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="事件" tabindex="-1">事件 <a class="header-anchor" href="#事件" aria-hidden="true">#</a></h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align:left;">事件名</th>
+                    <th>说明</th>
+                    <th>参数</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left;">confirm</td>
+                    <td>可编辑单元格确认事件</td>
+                    <td>scope: 当前行数据</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">cancel</td>
+                    <td>可编辑单元格确认事件</td>
+                    <td>scope: 当前行数据</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">size-change</td>
+                    <td>当前页数据条数改变事件</td>
+                    <td>val: 当前页条数</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">current-change</td>
+                    <td>当前页改变事件</td>
+                    <td>val: 当前页条数</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4 id="slots-插槽" tabindex="-1">slots 插槽 <a class="header-anchor" href="#slots-插槽"
+                  aria-hidden="true">#</a></h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th style="text-align:left;">名称</th>
+                    <th>说明</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align:left;">cellEdit</td>
+                    <td>自定义可编辑单元格内容</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">editRow</td>
+                    <td>自定义可编辑行按钮内容</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;">action</td>
+                    <td>自定义编辑区域内容</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc>
+            <div class="edit" data-v-07c132fc>
+              <div class="edit-link" data-v-07c132fc data-v-1ed99556>
+                <!---->
+              </div>
+            </div>
+            <div class="updated" data-v-07c132fc>
+              <!---->
+            </div>
+          </footer>
+          <!---->
+          <!--[-->
+          <!--]-->
+        </div>
+      </main>
+    </div>
+    <!---->
+    <!--]-->
+  </div>
+  <script>__VP_HASH_MAP__ = JSON.parse("{\"choosearea_index.md\":\"b9a08a14\",\"choosecity_index.md\":\"fd5e00f3\",\"chooseicon_index.md\":\"fab9b528\",\"choosetime_index.md\":\"f4b0053e\",\"form_index.md\":\"a6dd7a95\",\"index.md\":\"a4de55d7\",\"intro_index.md\":\"48dd2908\",\"modalform_index.md\":\"b5abf114\",\"progress_index.md\":\"04d5e51a\",\"quickstart_index.md\":\"0a223674\",\"table_index.md\":\"2284c983\",\"trend_index.md\":\"7ae44cb8\"}")</script>
+  <script type="module" async
+    src="https://lingdeqingyuan.github.io/element-components-doc/assets/app.375d6ddf.js"></script>
+
+</body>
+
 </html>
